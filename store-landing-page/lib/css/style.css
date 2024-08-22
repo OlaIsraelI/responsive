@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Remove Automatic Margin and Padding*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Style the Body of the web page*/
+.body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*Header Section*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/*Nav-bar*/
+.navigation-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 50px;
+    text-wrap: wrap;
+    align-items: center;
+}
+
+/*Nav-items*/
+.navigation-items ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+/*Remove the line from the anchor element*/
+.navigation-items ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-family: Poppins;
+}
+
+/*This styling is for the Navigation items*/
+.navigation-items ul li a:hover{
+    color: #D4C276;
+}
+
+/*Sign up button for the navigation bar*/
+.sign-up-button a{
+    background-color: black;
+    color: #ffff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/*Hover on sign up button*/
+.sign-up-button a:hover{
+    color: #D4C276 !important;
+}
+
+/*This is the Navigation toggler*/
+.navigation-toggler{
+    display: none;
+}
+
+.navigation-toggler i{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+/*Use the Media Query for Rsponsiveness*/
+@media screen and (max-width: 800px){
+    .sign-up-button{
+        padding: 5px 15px;
+    }
+    .navigation-items ul{
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 720px){
+    .navigation-items{
+        font-size: 12px;
+    }
+    .navigation-items ul{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 580px){
+    .header{
+        background-color: #EBD96B;
+    }
+    .navigation-items{
+        display: none;
+    }
+    .navigation-toggler{
+        display: block;
+    }
+    .navigation-bar{
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+/*This Styling is for the First-Section*/
+.first-section{
+    padding: 0 80px;
+}
+
+/*This styling is for the first division*/
+.first-division{
+    margin: 150px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    align-items: center;
+    background-color:#F4F6F5;
+    border-radius: 15px;
+}
+
+/*This styling is for lets-explore, and lets-explore-image*/
+.lets-explore, .lets-explore-image{
+    flex-basis: 50%;
+}
+
+/*This styling is for lets-explore h1*/
+.lets-explore h1{
+    font-family: poppins;
+    font-size:2.85em ;
+    font-weight: 900;
+}
+
+/*This styling is for the let text in the h1 tag*/
+.let{
+    background-color:#fff;
+    padding: 5px 80px 5px 10px;
+}
+
+/*This styling is for the unique text in the h1 tag*/
+.unique{
+        background-color:#EBD96B;
+        padding: 5px 60px 5px 10px;
+}
+
+/*This styling is for the control button*/
+.control-button{
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+/*This styling is for the pp tag in the control button*/
+.control-button p{
+    margin-bottom: 30px;
+    font-family: poppins;
+}
+
+/*This styling is for the a tag in the control button*/
+.control-button a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-family: poppins;
+}
+
+/*This styling is for to hover on the a tag of the control-button*/
+.control-button a:hover{
+    color: #D4C276;
+}
+
+/*This styling is for the lets-explore image tmage*/
+.lets-explore-image img{
+    width: 100%;
+}
+
+/*This is for the Media Query*/
+@media screen and (max-width: 720px){
+    .lets-explore, .lets-explore-image{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+/*This styling is for the second session*/
+.Second-session{
+    padding: 20px 0; /* Adjust padding as needed */
+    text-align: center; /* Center the content */
+}
+.Second-division{
+    background-color: #EBD96B;
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    align-items: center; /* Center the images vertically (if they have different heights) */
+    gap: 20px; /* Space between images */
+    /*flex-wrap: wrap;  Allows wrapping if the screen is too narrow */
+}
+.organisation-logo{
+    flex-basis: 16.6667%;
+    gap: 20px;
+}
+.organisation-logo img{
+    width: 100%;
+    margin: 10px;
+    max-width: 100px; /* Adjust the maximum width of the images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
+
+
+/*This styling is for the third session*/
+.Third-session{
+    border-radius: 20px;
+}
+.new-arrival h1{
+    padding: 80px 80px;
+    align-items: start;
+    font-weight: 900;
+    font-size: 1.85em;
+    font-family: poppins;
+}
+.arrival{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    font-family: poppins;
+}
+.arrival-image{
+    gap: 40px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.arrival-image p{
+    font-size: 1em;
+    font-weight: 500;
+    font-family: poppins;
+}
+.explore{
+    display: flex;
+    justify-content: space-between;
+}
+.explore a{
+    text-decoration: none;
+    color:#7F7F7F;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+
+
+
+
+/*This styling is for the fourth session*/
+.Fourth-session{
+    padding: 0 80px;
+    margin: 120px auto;
+}
+.sales-advert{
+    background-image: linear-gradient(to left, #E0C340, #F9DF56);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+}
+.sales-advert-image{
+    flex-basis: 50%;
+}
+.sales-advert-image img{
+    width: 100%;
+}
+.pay{
+    flex-basis: 50%;
+    justify-content: center;
+    margin: 20px auto;
+    border: 3px solid #e6c003;
+    flex-wrap: wrap;
+    padding: 45px 45px 45px 45px;
+}
+.paynow h1{
+    flex-wrap: wrap;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: poppins;
+}
+.payday{
+    background-color:#fff;
+    padding: 5px 80px 5px 10px;
+}
+.paynow h3{
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family: poppins;
+    margin-bottom: 10px;
+}
+.payment-method{
+    margin: 20px auto;
+}
+.button{
+    margin: 10px 0px 0 0;
+    padding: 20px 0 0 0;
+}
+.button a{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 5px;
+        font-family: poppins;
+}
+.button a:hover{
+    color: #D4C276;
+}
+@media screen and (max-width: 720px) {
+    .sales-advert-image{
+        flex-basis: 100%;
+    }
+    .pay{
+        flex-basis: 100%;
+        border: 1px solid #e6c003;
+    }
+
+    .paynow h1{
+        flex-wrap: wrap;
+        font-size: 1.5em;
+        font-weight: 700;
+        font-family: poppins;
+    }
+    .payday{
+        background-color:#fff; 
+    }
+    .paynow h3{
+        flex-wrap: wrap;
+        font-size: 0.6em;
+        font-weight: 200;
+        font-family: poppins;
+        margin-bottom: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Fifth-session{
+    padding: 0 85px;
+    margin: 120px auto;
+}
+.trending-item h1{
+    align-items: start;
+    font-weight: 900;
+    font-size: 1.85em;
+    font-family: poppins;
+}
+.trend{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.instagram{
+    flex-basis: 50%;
+    padding: 50px 50px 50px 50px;
+    
+}
+.instagram img{
+    width: 100%;
+    border-radius: 15px;
+}
+.anchor{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+    font-family: poppins;
+}
+.anchor a{
+    text-decoration: none;
+    color: #7F7F7F;
+}
+.under-age{
+    flex-basis: 50%;
+    padding: 50px 50px 50px 50px;
+
+}
+.under-age img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 720px) {
+    .instagram{
+        flex-basis: 100%;
+    } 
+    .under-age{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+
+/*This styling is for the sixth session.*/
+.Sixth-section{
+    padding: 0 85px;
+    margin: 120px 0;
+}
+.get-more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 75px;
+}
+.download-app{
+    flex-basis: 50%;
+}
+.download-app h1{
+    font-weight: 900;
+    font-size: 1.85em;
+    font-family: poppins;
+}
+.download-app p{
+    font-weight: 400;
+    font-size: 1em;
+    font-family: poppins;
+}
+.d-a-img{
+    width: 50%;
+    height: auto;
+    display: flex;
+    gap: 10px;
+}
+.d-a-img img{
+    width: 100%;
+    height: 40px;
+}
+.images-fashion{
+    flex-basis: 50%;
+}
+.images-fashion img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 720px) {
+    .get-more{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding: 0 none;
+    }
+    .download-app{
+        flex-basis: 100%;
+    }
+    .d-a-img{
+        width: 90%;
+        display: flex;
+        gap: 5px;
+    }
+    .images-fashion{
+        flex-basis: 200%;
+    }
+    .images-fashion img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*This style is for the footer*/
+.footer-section{
+    padding: 0 85px;
+    background-color: #000000;  
+}
+.join-the-company {
+    background-color: #e6c003;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    margin-top: 120px;
+    padding: 100px 80px;
+    color: #FFFFFF;
+    text-align: center;
+    height: auto;
+    
+}
+.join-company h1{
+    font-weight: 900;
+    font-size: 2em;
+    font-family: poppins;
+}
+.join-company h2{
+    font-weight: 400;
+    font-size: 1.3em;
+    font-family: poppins;
+}
+.join-company input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.join-company button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.join-company button[type="submit"]:hover {
+    background-color: #D4C276;
+
+}
+.for-fashion{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 80px 120px 80px;
+    flex-basis: 50%;
+    align-items: flex-start;
+}
+.fashion-iq {
+    color: #fff;
+    margin-bottom: 10px;
+}
+.company-information {
+    color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fashion-iq h1{
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: poppins;  
+    margin-bottom: 10px;
+}
+.fashion-iq h2{
+    font-weight: 300;
+    font-size: 0.8em;
+    font-family: poppins; 
+    color: #8E8E8E;
+}
+.social-media{
+    display: flex;
+}
+.social-media a i{
+    padding: 5px 0px 10px 5px;
+    color: #e6c003;
+}
+.company-information h1{
+    font-weight: 300;
+    font-size: 1em;
+    font-family: poppins;  
+}
+.information-list a{
+    text-decoration: none;
+}
+.information-list a li{
+    font-weight: 300;
+    font-size: 0.8em;
+    font-family: poppins;
+    list-style: none; 
+    color: #8E8E8E;
+}
+.information-list a li:hover{
+    color:#D4C276 ;
+}
+@media screen and (max-width: 720px) {
+    .for-fashion{
+        padding: 20px 20px 100px 20px;
+        gap: 15px;
+    }
+}
