@@ -45,11 +45,13 @@
     color: black;
     font-weight: 600;
     font-family: Poppins;
+    transition: background-color 0.7s ease, transform 0.7s ease;
 }
 
 /*This styling is for the Navigation items*/
 .navigation-items ul li a:hover{
     color: #D4C276;
+    transform: scale(1.1);
 }
 
 /*Sign up button for the navigation bar*/
@@ -58,11 +60,13 @@
     color: #ffff !important;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: background-color 0.7s ease, transform 0.7s ease;
 }
 
 /*Hover on sign up button*/
 .sign-up-button a:hover{
     color: #D4C276 !important;
+    transform: scale(1.1);
 }
 
 /*This is the Navigation toggler*/
@@ -391,7 +395,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 .instagram{
     flex-basis: 50%;
@@ -559,10 +562,12 @@
     border-radius: 4px;
     cursor: pointer;
     margin-top: 40px;
+    transform: scale(1.1);
 }
 
 .join-company button[type="submit"]:hover {
     background-color: #D4C276;
+    transition: background-color 0.7s ease, transform 0.7s ease;
 
 }
 .for-fashion{

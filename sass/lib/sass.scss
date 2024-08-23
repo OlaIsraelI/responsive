@@ -1,0 +1,11 @@
+@import "stylesass";
+
+h1{
+    color: $textcolor;
+    font-size: $textsize;
+    text-align: $textposition;
+}
+p{
+    color: $textcolor;
+    font-size: $paragramtext;
+}
